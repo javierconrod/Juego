@@ -1,0 +1,16 @@
+﻿<Window x:Class="Juego.Ventana_Multijugador"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Juego"
+        mc:Ignorable="d"
+        Title="Partida Dividida" Height="720" Width="1240" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Canvas Name="canvasMultijugador" Background="SkyBlue">
+        <ListBox x:Name="listNombreUsuario" Height="511" Canvas.Left="43" Canvas.Top="134" Width="495" SelectionChanged="ListNombreUsuario_SelectionChanged" Background="#3302040C" FontFamily="Indivisa Text Sans Black" FontSize="24" BorderBrush="{x:Null}" IsEnabled="False"/>
+        <ListBox x:Name="listCantidadPuntos" Height="511" Canvas.Left="660" Canvas.Top="134" Width="518" Background="#33020511" FontFamily="Indivisa Text Sans Black" FontSize="24" IsEnabled="False"/>
+        <TextBlock Canvas.Left="758" TextWrapping="Wrap" Text="PUNTAJE" Canvas.Top="10" FontSize="72" FontFamily="Indivisa Text Sans Black"/>
+        <TextBlock Canvas.Left="132" TextWrapping="Wrap" Text="NOMBRE" Canvas.Top="10" FontSize="72" FontFamily="Indivisa Text Sans Black"/>
+
+    </Canvas>
+</Window>
